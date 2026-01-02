@@ -1,19 +1,21 @@
 #ifndef _MAT_IO_H
 #define _MAT_IO_H
+#include <stdio.h>
 
-typedef struct _Matrix {
-				int r,c;
-				double **data;
+typedef struct _Matrix
+{
+	int r, c;
+	double **data;
 } Matrix;
 
 /**
  * Zwraca 0 - udalo sie wczytac
  * Zwraca 1 - podczas wczytywania wystapil blad
  */
-Matrix * readFromFile(char * fname);
-void printToScreen(Matrix *mat);
+Matrix *readFromFile(char *fname);
+void printToScreen(Matrix *mat, FILE *fname);
 
-Matrix * createMatrix(int r, int c);
+Matrix *createMatrix(int r, int c);
 void freeMatrix(Matrix *mat);
 
 #endif

@@ -1,0 +1,4 @@
+Jezyka i metody programowania I, lab09
+Autorzy: Mikolaj Nierodzinski, Nghia Bao Phuc Ho
+Grupa: 3
+to run the multitest, first create a directory bin and run this command in terminal: make test_multitest
