@@ -8,7 +8,7 @@ test: all
 	bin/gauss dane/A dane/b
 
 test_main: all 
-	bin/gauss dane/A1.txt dane/b1.txt outputSample/sample1.txt
+	bin/gauss dane/A1.txt dane/b1.txt 
 
 test_multitest: multitest
 	./bin/multitest 
